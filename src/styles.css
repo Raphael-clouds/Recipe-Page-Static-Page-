@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --brown-800: hsl(14, 45%, 36%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --orange-100: oklch(95.4% 0.038 75.164);
+  --young-serif: "Young Serif", serif;
+  --outfit: "Outfit", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card-container {
+  background-color: #fff;
+}
+
+.card-container .img-container {
+  height: fit-content;
+}
+
+.card-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-container .header-content {
+  padding: 2rem;
+}
+
+.header-content h1 {
+  font-family: var(--young-serif);
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: var(--stone-900);
+  margin-bottom: 1rem;
+}
+
+.header-content p,
+main {
+  font-family: var(--outfit);
+  color: var(--stone-600);
+}
+
+.card-container main {
+  padding: 0 2rem 0 2rem;
+}
+
+.card-container .preparation-section {
+  background-color: var(--rose-50);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+}
+
+.card-container .preparation-section h2 {
+  color: var(--rose-800);
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.preparation-section ul {
+  margin-left: 1.5rem;
+}
+
+.preparation-section li::marker {
+  color: var(--rose-800);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.preparation-section li {
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.preparation-section li span {
+  font-weight: bold;
+}
+
+main .section-title {
+  font-family: var(--young-serif);
+  color: var(--brown-800);
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+main .section-content {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+main .section-content:last-child {
+  border-bottom: none;
+}
+
+.ingredients ul {
+  margin-left: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.ingredients li::marker{
+  color: var(--brown-800);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.ingredients li {
+  padding-left: 1rem;
+  margin-bottom: .5rem;
+}
+.ingredients li:last-child {
+  margin-bottom: 0;
+}
+
+.instructions ol{
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.instructions li::marker{
+  color: var(--brown-800);
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: bold;
+}
+
+.instructions li {
+  padding-left: 1rem;
+  margin-bottom: .75rem;
+}
+
+.instructions li span{
+  font-weight: bold;
+}
+
+.instructions li:last-child {
+  margin-bottom: 0;
+}
+
+.nutrition{
+  margin-bottom: 2.5rem;
+}
+
+.nutrition p {
+  margin-bottom: 1rem;
+}
+
+.nutrition table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nutrition table tbody {
+  width: 100%;
+}
+
+.nutrition table tbody tr{
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition table tbody tr td{
+  padding: .75rem 0;
+}
+
+.nutrition table tbody tr td:first-child{
+  padding-left: 1.5rem;
+}
+
+.nutrition table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.nutrition table tbody .measures{
+  font-weight: bold;
+  color: var(--brown-800);
+}
+
+/* Media queries */
+
+@media (min-width: 1280px){
+  body{
+    background-color: var(--orange-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 48rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1rem;
+  }
+  .instructions li{
+    margin-bottom: 1rem;
+  }
+  .img-container{
+    padding: 2rem 2rem 0 2rem;
+  }
+  .img-container img{
+    border-radius: 0.75rem;
+    width: 100%;
+  }
+}
