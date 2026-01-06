@@ -1,6 +1,6 @@
 # 🍽️ Recipe Page
 
-Simple web project that showcases a cooking recipe through a clean, responsive, and modern interface. The goal of this project is to practice basic frontend development using HTML, CSS, and Tailwind CSS.
+Simple web project that showcases a cooking recipe through a clean, responsive, and modern interface. The goal of this project is to practice basic frontend development using HTML and CSS
 
 ## 📄 Description
 
@@ -10,13 +10,12 @@ This project consists of a static web page that displays a complete recipe, incl
 
 - HTML5  
 - CSS3  
-- Tailwind CSS  
 
 ## ✨ Features
 
 - Responsive design for different screen sizes  
 - Clean and semantic HTML structure  
-- Modern UI styled with Tailwind CSS  
+- Modern UI styled with CSS  
 - Easy-to-read and well-organized code 
 
 ## 🎯 Project Goals
